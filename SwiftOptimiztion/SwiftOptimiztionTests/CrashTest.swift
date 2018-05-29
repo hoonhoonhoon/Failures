@@ -28,8 +28,8 @@ final class FireEvent<Element> {
 			switch next {
 			case .next(let element):
 				self.onNext?(element)
-			case .completed:
-				break
+//			case .completed:
+//				break
 			}
 		}
 	}
