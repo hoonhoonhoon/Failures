@@ -59,14 +59,7 @@ final class Anonymous<Element> {
 }
 
 final class Fire<Element> {
-
-	let element: Element
-
 	var observer: Anonymous<Element>?
-
-	init(element: Element) {
-		self.element = element
-	}
 	func subscribe(onNext: ((Element) -> Void)? = nil, onCompleted: (() -> Void)? = nil) {
 		self.observer = Anonymous { event in
 			switch event {
@@ -79,7 +72,7 @@ final class Fire<Element> {
 	}
 
 	func fire(_ next: Next<Element>) {
-		DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
 			self.observer?.onCore(next)
 		}
 	}
@@ -108,7 +101,7 @@ class RxSwiftCrashTest: XCTestCase {
 	/// ObserverType을 상속하는 객체가 struct인 경우는 아무런 문제가 없습니다.
 	func testRxSwiftCrash() {
 //		Observable.just(true).subscribe(self.testObserver).dispose()
-		let fire = Fire(element: false)
+		let fire = Fire<Bool>()
 		fire.subscribe(onNext: self.testObserver.onNext)
 		fire.fire(.next(false))
 
