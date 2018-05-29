@@ -14,7 +14,7 @@ public enum Next<Element> {
 	case completed
 }
 
-public final class TestObserver<Element>: OnNext {
+public final class ReceiveEvent<Element>: OnNext {
 
 	public func on(_ event: Next<Element>) {
 		print(event)
@@ -22,7 +22,7 @@ public final class TestObserver<Element>: OnNext {
 
 }
 
-final class Anonymous<Element> {
+final class AnonymousEventSend<Element> {
 	typealias EventHandler = (Next<Element>) -> Void
 	let eventHandler: (Next<Element>) -> Void
 	init(_ handler: @escaping EventHandler) {
@@ -33,10 +33,10 @@ final class Anonymous<Element> {
 	}
 }
 
-final class Fire<Element> {
-	var observer: Anonymous<Element>?
+final class FireEvent<Element> {
+	var observer: AnonymousEventSend<Element>?
 	func subscribe(onNext: ((Element) -> Void)? = nil, onCompleted: (() -> Void)? = nil) {
-		self.observer = Anonymous { event in
+		self.observer = AnonymousEventSend { event in
 			switch event {
 			case .next(let element):
 				onNext?(element)
@@ -54,7 +54,7 @@ final class Fire<Element> {
 }
 
 class RxSwiftCrashTest: XCTestCase {
-	var testObserver = TestObserver<Bool>()
+	var testObserver = ReceiveEvent<Bool>()
 
 	override func setUp() {
 		super.setUp()
@@ -67,7 +67,7 @@ class RxSwiftCrashTest: XCTestCase {
 
 	/// 
 	func testRxSwiftCrash() {
-		let fire = Fire<Bool>()
+		let fire = FireEvent<Bool>()
 		fire.subscribe(onNext: self.testObserver.onNext)
 		fire.fire(.next(false))
 

@@ -209,8 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC4545920BD17FF00AD92AC /* Next.swift in Sources */,
 				FFC1CC8520BBC684004E92AE /* RxSwiftCrashTest.swift in Sources */,
+				FFC4545920BD17FF00AD92AC /* Next.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
