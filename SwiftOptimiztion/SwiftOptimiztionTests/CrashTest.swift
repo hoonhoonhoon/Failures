@@ -15,6 +15,14 @@ public final class ReceiveEvent<Element>: OnNext {
 	}
 }
 
+// MARK: - ReceiveEvent에 직접 onNext를 구현하면 문제가 사라진다.
+// MARK: - 아무래도 ReceiveEvent객체가 사라지는것이 아닌 ReceiveEvent.OnNext.onNext에서 ReceiveEvent.on 함수에 제대로 접근을 하지 못하는 것이 문제라는 생각이 든다.
+//extension ReceiveEvent {
+//	func onNext(_ element: Element) {
+//		self.on(element)
+//	}
+//}
+
 class CrashTest: XCTestCase {
 	var receiver = ReceiveEvent<Bool>()
 	var onNext: ((Bool) -> Void)?
