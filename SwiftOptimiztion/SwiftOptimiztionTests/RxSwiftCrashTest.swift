@@ -36,6 +36,7 @@ public final class TestObserver2<Element>: ObserverType {
 
 }
 
+// Optmization for Speed인 경우 onNext를 경유하지 않고 바로 on 함수로 들어감
 extension OnNext {
 	func onNext(_ element: Element) {
 		on(.next(element))
@@ -46,15 +47,40 @@ extension OnNext {
 	}
 }
 
+final class Anonymous<Element> {
+	typealias EventHandler = (Next<Element>) -> Void
+	let eventHandler: (Next<Element>) -> Void
+	init(_ handler: @escaping EventHandler) {
+		self.eventHandler = handler
+	}
+	func onCore(_ next: Next<Element>) {
+		self.eventHandler(next)
+	}
+}
+
 final class Fire<Element> {
+
 	let element: Element
+
+	var observer: Anonymous<Element>?
+
 	init(element: Element) {
 		self.element = element
 	}
-	func subscribe(onNext: ((Element) -> Void)? = nil) {
-		let element = self.element
-		DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-			onNext?(element)
+	func subscribe(onNext: ((Element) -> Void)? = nil, onCompleted: (() -> Void)? = nil) {
+		self.observer = Anonymous { event in
+			switch event {
+			case .next(let element):
+				onNext?(element)
+			case .completed:
+				onCompleted?()
+			}
+		}
+	}
+
+	func fire(_ next: Next<Element>) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+			self.observer?.onCore(next)
 		}
 	}
 }
@@ -62,14 +88,13 @@ final class Fire<Element> {
 class RxSwiftCrashTest: XCTestCase {
 
 	var publishSubject: PublishSubject<Bool>!
-	var testObserver: TestObserver2<Bool>!
+	var testObserver = TestObserver2<Bool>()
 	var bag: DisposeBag!
 
 	override func setUp() {
 		super.setUp()
 		bag = DisposeBag()
 		publishSubject = PublishSubject<Bool>()
-		testObserver = TestObserver2()
 	}
 
 	override func tearDown() {
@@ -86,7 +111,9 @@ class RxSwiftCrashTest: XCTestCase {
 	/// ObserverType을 상속하는 객체가 struct인 경우는 아무런 문제가 없습니다.
 	func testRxSwiftCrash() {
 //		Observable.just(true).subscribe(self.testObserver).dispose()
-		Fire(element: false).subscribe(onNext: self.testObserver.onNext)
+		let fire = Fire(element: false)
+		fire.subscribe(onNext: self.testObserver.onNext)
+		fire.fire(.next(false))
 
 		let waiter = XCTWaiter()
 		let expect = expectation(description: #function)
