@@ -12,7 +12,7 @@
 		FFC1CC7220BBC683004E92AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7020BBC683004E92AE /* Main.storyboard */; };
 		FFC1CC7720BBC684004E92AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7620BBC684004E92AE /* Assets.xcassets */; };
 		FFC1CC7A20BBC684004E92AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */; };
-		FFC1CC8520BBC684004E92AE /* RxSwiftCrashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */; };
+		FFC1CC8520BBC684004E92AE /* CrashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC8420BBC684004E92AE /* CrashTest.swift */; };
 		FFC4545920BD17FF00AD92AC /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC4545820BD17FF00AD92AC /* Next.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		FFC1CC7920BBC684004E92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC1CC7B20BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC1CC8020BBC684004E92AE /* SwiftOptimiztionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOptimiztionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCrashTest.swift; sourceTree = "<group>"; };
+		FFC1CC8420BBC684004E92AE /* CrashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashTest.swift; sourceTree = "<group>"; };
 		FFC1CC8620BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC4545820BD17FF00AD92AC /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 		FFC1CC8320BBC684004E92AE /* SwiftOptimiztionTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */,
+				FFC1CC8420BBC684004E92AE /* CrashTest.swift */,
 				FFC4545820BD17FF00AD92AC /* Next.swift */,
 				FFC1CC8620BBC684004E92AE /* Info.plist */,
 			);
@@ -209,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC1CC8520BBC684004E92AE /* RxSwiftCrashTest.swift in Sources */,
+				FFC1CC8520BBC684004E92AE /* CrashTest.swift in Sources */,
 				FFC4545920BD17FF00AD92AC /* Next.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,7 +53,7 @@ final class FireEvent<Element> {
 	}
 }
 
-class RxSwiftCrashTest: XCTestCase {
+class CrashTest: XCTestCase {
 	var testObserver = ReceiveEvent<Bool>()
 
 	override func setUp() {
