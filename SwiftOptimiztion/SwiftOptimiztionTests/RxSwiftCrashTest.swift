@@ -86,15 +86,12 @@ final class Fire<Element> {
 }
 
 class RxSwiftCrashTest: XCTestCase {
-
-	var publishSubject: PublishSubject<Bool>!
 	var testObserver = TestObserver2<Bool>()
 	var bag: DisposeBag!
 
 	override func setUp() {
 		super.setUp()
 		bag = DisposeBag()
-		publishSubject = PublishSubject<Bool>()
 	}
 
 	override func tearDown() {
