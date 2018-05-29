@@ -10,7 +10,7 @@ import XCTest
 import RxSwift
 @testable import SwiftOptimiztion
 
-final class TestObserver<Element>: ObserverType {
+struct TestObserver<Element>: ObserverType {
 
 	func on(_ event: Event<Element>) {
 		print(event)
@@ -40,7 +40,8 @@ class RxSwiftCrashTest: XCTestCase {
 	/// ObserverType을 구현하는 타입은 on함수만 구현하면 onNext, onCompleted, onError함수의 Event가 on으로 편하게 넘어가도록 구현되어있습니다.
 	/// 문제는 swift code generation optmization level을 optimization speed로 하는 경우
 	/// 특정 observertype의 onNext함수를 인자로서만 사용할 때 발생하는데,
-	/// 현재까지는 onNext 함수(클로져)를 소유하는 객체의 소유권이 해지됨으로서 발생하는 이슈인거 같습니다.
+	/// extension이 아닌 직접 onNext를 구현한다면 해당 문제는 발생하지 않습니다.
+	/// extension으로 접근하는 경우 소유권 체크를 못하는 부분이 있는거 같습니다.
 	func testRxSwiftCrash() {
 		Observable.just(true).subscribe(onNext: self.testObserver.onNext).dispose()
 //		Observable.just(true).subscribe(onNext: self.publishSubject.onNext).dispose()
