@@ -3,6 +3,7 @@
 *장애 내용
 앱스토어 배포 버전에서 크래시 발생
 RxSwift, RxCocoa를 사용한 코드가 관련됨
+
 ### Environment
 - Libraries
 1. cocoapods 1.3.1
@@ -14,3 +15,5 @@ RxSwift, RxCocoa를 사용한 코드가 관련됨
 1. xcode 9.3.1
 2. app target version 11.3
 3. Build Settings -> Swift Compiler - Code Generation -> Optimization Level -> Optimization for Speed
+
+*시뮬레이터에서 동일함*
