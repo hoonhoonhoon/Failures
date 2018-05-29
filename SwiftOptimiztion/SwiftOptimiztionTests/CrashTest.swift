@@ -61,7 +61,7 @@ class CrashTest: XCTestCase {
 	}
 
 	/// 
-	func testRxSwiftCrash() {
+	func testCrash() {
 		let fire = FireEvent<Bool>()
 		fire.subscribe(onNext: self.testObserver.onNext)
 		fire.fire(.next(false))
