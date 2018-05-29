@@ -13,3 +13,5 @@
 3. Build Settings -> Swift Compiler - Code Generation -> Optimization Level -> Optimization for Speed
 
 *시뮬레이터에서 동일함*
+
+**RxSwiftCrashTest.swift**에서 확인 가능합니다.
