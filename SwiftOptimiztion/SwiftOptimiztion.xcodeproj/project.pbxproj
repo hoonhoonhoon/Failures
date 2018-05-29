@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		505DB96835DB03305A4B823D /* Pods_SwiftOptimiztionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D04CF2874768A1BEC939CD /* Pods_SwiftOptimiztionTests.framework */; };
-		6C866D204D225F1E5E0CE745 /* Pods_SwiftOptimiztion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87BA8156B90351D602F6F34 /* Pods_SwiftOptimiztion.framework */; };
-		FF140BBD20BCD8CE00A99FC2 /* RxSwiftCrash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */; };
+		7949E9AA2AAC958B08B37C1B /* Pods_SwiftOptimiztion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF6027358E75DFB29A3BC87 /* Pods_SwiftOptimiztion.framework */; };
+		E076A0AC17ADB7EB27BF4429 /* Pods_SwiftOptimiztionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B75E017AE6277F9AE822A8 /* Pods_SwiftOptimiztionTests.framework */; };
 		FFC1CC6D20BBC683004E92AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */; };
 		FFC1CC6F20BBC683004E92AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6E20BBC683004E92AE /* ViewController.swift */; };
 		FFC1CC7220BBC683004E92AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7020BBC683004E92AE /* Main.storyboard */; };
 		FFC1CC7720BBC684004E92AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7620BBC684004E92AE /* Assets.xcassets */; };
 		FFC1CC7A20BBC684004E92AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */; };
-		FFC1CC8520BBC684004E92AE /* SwiftOptimiztionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC8420BBC684004E92AE /* SwiftOptimiztionTests.swift */; };
+		FFC1CC8520BBC684004E92AE /* RxSwiftCrashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		58D04CF2874768A1BEC939CD /* Pods_SwiftOptimiztionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOptimiztionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69BAF9A8F0D10FB92A0E21BB /* Pods-SwiftOptimiztion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztion.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion.release.xcconfig"; sourceTree = "<group>"; };
-		9721D4DA5720AF386A3C30DF /* Pods-SwiftOptimiztionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests.release.xcconfig"; sourceTree = "<group>"; };
-		E9C8C4F399F8AA34DF4419AF /* Pods-SwiftOptimiztionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F87BA8156B90351D602F6F34 /* Pods_SwiftOptimiztion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOptimiztion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F93185C9E7921E75795ABEEA /* Pods-SwiftOptimiztion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion.debug.xcconfig"; sourceTree = "<group>"; };
-		FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCrash.swift; sourceTree = "<group>"; };
+		077C4F8378AD97BB747B338C /* Pods-SwiftOptimiztionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27B75E017AE6277F9AE822A8 /* Pods_SwiftOptimiztionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOptimiztionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E125EA0DBF0B55289194CDC /* Pods-SwiftOptimiztion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion.debug.xcconfig"; sourceTree = "<group>"; };
+		4BF6027358E75DFB29A3BC87 /* Pods_SwiftOptimiztion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOptimiztion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BBF0AD521C50D060C5764A /* Pods-SwiftOptimiztion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztion.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion.release.xcconfig"; sourceTree = "<group>"; };
+		F61A6A0C9D60722D8F75DFAA /* Pods-SwiftOptimiztionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests.release.xcconfig"; sourceTree = "<group>"; };
 		FFC1CC6920BBC683004E92AE /* SwiftOptimiztion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOptimiztion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC1CC6E20BBC683004E92AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +42,7 @@
 		FFC1CC7920BBC684004E92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC1CC7B20BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC1CC8020BBC684004E92AE /* SwiftOptimiztionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOptimiztionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC1CC8420BBC684004E92AE /* SwiftOptimiztionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOptimiztionTests.swift; sourceTree = "<group>"; };
+		FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCrashTest.swift; sourceTree = "<group>"; };
 		FFC1CC8620BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C866D204D225F1E5E0CE745 /* Pods_SwiftOptimiztion.framework in Frameworks */,
+				7949E9AA2AAC958B08B37C1B /* Pods_SwiftOptimiztion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,31 +59,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505DB96835DB03305A4B823D /* Pods_SwiftOptimiztionTests.framework in Frameworks */,
+				E076A0AC17ADB7EB27BF4429 /* Pods_SwiftOptimiztionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D6C3D9DE24F03422F8F474B /* Frameworks */ = {
+		00E1FA62FCD0DB301D6A0107 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F87BA8156B90351D602F6F34 /* Pods_SwiftOptimiztion.framework */,
-				58D04CF2874768A1BEC939CD /* Pods_SwiftOptimiztionTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA160F3F932E5E1B502FAD4C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F93185C9E7921E75795ABEEA /* Pods-SwiftOptimiztion.debug.xcconfig */,
-				69BAF9A8F0D10FB92A0E21BB /* Pods-SwiftOptimiztion.release.xcconfig */,
-				E9C8C4F399F8AA34DF4419AF /* Pods-SwiftOptimiztionTests.debug.xcconfig */,
-				9721D4DA5720AF386A3C30DF /* Pods-SwiftOptimiztionTests.release.xcconfig */,
+				2E125EA0DBF0B55289194CDC /* Pods-SwiftOptimiztion.debug.xcconfig */,
+				E6BBF0AD521C50D060C5764A /* Pods-SwiftOptimiztion.release.xcconfig */,
+				077C4F8378AD97BB747B338C /* Pods-SwiftOptimiztionTests.debug.xcconfig */,
+				F61A6A0C9D60722D8F75DFAA /* Pods-SwiftOptimiztionTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F0EA37A35A42950A2FDC1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BF6027358E75DFB29A3BC87 /* Pods_SwiftOptimiztion.framework */,
+				27B75E017AE6277F9AE822A8 /* Pods_SwiftOptimiztionTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FFC1CC6020BBC683004E92AE = {
@@ -94,8 +92,8 @@
 				FFC1CC6B20BBC683004E92AE /* SwiftOptimiztion */,
 				FFC1CC8320BBC684004E92AE /* SwiftOptimiztionTests */,
 				FFC1CC6A20BBC683004E92AE /* Products */,
-				CA160F3F932E5E1B502FAD4C /* Pods */,
-				7D6C3D9DE24F03422F8F474B /* Frameworks */,
+				00E1FA62FCD0DB301D6A0107 /* Pods */,
+				8F0EA37A35A42950A2FDC1C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +111,6 @@
 			children = (
 				FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */,
 				FFC1CC6E20BBC683004E92AE /* ViewController.swift */,
-				FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */,
 				FFC1CC7020BBC683004E92AE /* Main.storyboard */,
 				FFC1CC7620BBC684004E92AE /* Assets.xcassets */,
 				FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */,
@@ -125,7 +122,7 @@
 		FFC1CC8320BBC684004E92AE /* SwiftOptimiztionTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFC1CC8420BBC684004E92AE /* SwiftOptimiztionTests.swift */,
+				FFC1CC8420BBC684004E92AE /* RxSwiftCrashTest.swift */,
 				FFC1CC8620BBC684004E92AE /* Info.plist */,
 			);
 			path = SwiftOptimiztionTests;
@@ -138,12 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC1CC8920BBC684004E92AE /* Build configuration list for PBXNativeTarget "SwiftOptimiztion" */;
 			buildPhases = (
-				2C9921CBE7DC6538C63F3F8E /* [CP] Check Pods Manifest.lock */,
+				AB5452E1A38A351C2E1DE2E5 /* [CP] Check Pods Manifest.lock */,
 				FFC1CC6520BBC683004E92AE /* Sources */,
 				FFC1CC6620BBC683004E92AE /* Frameworks */,
 				FFC1CC6720BBC683004E92AE /* Resources */,
-				1C8A3DB79A0D055BF45940BB /* [CP] Embed Pods Frameworks */,
-				9B56924260BAE29BC5AEF628 /* [CP] Copy Pods Resources */,
+				10D39CCB941BA94FF260E078 /* [CP] Embed Pods Frameworks */,
+				47B9109FF983DCECC58AB8D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFC1CC8C20BBC684004E92AE /* Build configuration list for PBXNativeTarget "SwiftOptimiztionTests" */;
 			buildPhases = (
-				E46070D7690FF170EBEF7BCB /* [CP] Check Pods Manifest.lock */,
+				DCE2469450A1AFF3667355A8 /* [CP] Check Pods Manifest.lock */,
 				FFC1CC7C20BBC684004E92AE /* Sources */,
 				FFC1CC7D20BBC684004E92AE /* Frameworks */,
 				FFC1CC7E20BBC684004E92AE /* Resources */,
-				DEBA36AF1CBA618B7CBCE26E /* [CP] Embed Pods Frameworks */,
-				0904DD75910653ADCEC4EC09 /* [CP] Copy Pods Resources */,
+				714A7D5EB5292EA16EEAC028 /* [CP] Embed Pods Frameworks */,
+				AAF9F00E14299C723236C4CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +231,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0904DD75910653ADCEC4EC09 /* [CP] Copy Pods Resources */ = {
+		10D39CCB941BA94FF260E078 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47B9109FF983DCECC58AB8D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714A7D5EB5292EA16EEAC028 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF9F00E14299C723236C4CE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,27 +294,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1C8A3DB79A0D055BF45940BB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2C9921CBE7DC6538C63F3F8E /* [CP] Check Pods Manifest.lock */ = {
+		AB5452E1A38A351C2E1DE2E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,37 +312,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B56924260BAE29BC5AEF628 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEBA36AF1CBA618B7CBCE26E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E46070D7690FF170EBEF7BCB /* [CP] Check Pods Manifest.lock */ = {
+		DCE2469450A1AFF3667355A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +337,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF140BBD20BCD8CE00A99FC2 /* RxSwiftCrash.swift in Sources */,
 				FFC1CC6F20BBC683004E92AE /* ViewController.swift in Sources */,
 				FFC1CC6D20BBC683004E92AE /* AppDelegate.swift in Sources */,
 			);
@@ -352,7 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC1CC8520BBC684004E92AE /* SwiftOptimiztionTests.swift in Sources */,
+				FFC1CC8520BBC684004E92AE /* RxSwiftCrashTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +496,7 @@
 		};
 		FFC1CC8A20BBC684004E92AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F93185C9E7921E75795ABEEA /* Pods-SwiftOptimiztion.debug.xcconfig */;
+			baseConfigurationReference = 2E125EA0DBF0B55289194CDC /* Pods-SwiftOptimiztion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,7 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,7 +517,7 @@
 		};
 		FFC1CC8B20BBC684004E92AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69BAF9A8F0D10FB92A0E21BB /* Pods-SwiftOptimiztion.release.xcconfig */;
+			baseConfigurationReference = E6BBF0AD521C50D060C5764A /* Pods-SwiftOptimiztion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,7 +530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,7 +538,7 @@
 		};
 		FFC1CC8D20BBC684004E92AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9C8C4F399F8AA34DF4419AF /* Pods-SwiftOptimiztionTests.debug.xcconfig */;
+			baseConfigurationReference = 077C4F8378AD97BB747B338C /* Pods-SwiftOptimiztionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOptimiztion.app/SwiftOptimiztion";
@@ -566,7 +561,7 @@
 		};
 		FFC1CC8E20BBC684004E92AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9721D4DA5720AF386A3C30DF /* Pods-SwiftOptimiztionTests.release.xcconfig */;
+			baseConfigurationReference = F61A6A0C9D60722D8F75DFAA /* Pods-SwiftOptimiztionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOptimiztion.app/SwiftOptimiztion";

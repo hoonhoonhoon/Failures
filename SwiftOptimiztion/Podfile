@@ -7,7 +7,6 @@ target 'SwiftOptimiztion' do
 
   # Pods for SwiftOptimiztion
   pod 'RxSwift'
-	pod 'RxCocoa'
 
   target 'SwiftOptimiztionTests' do
     inherit! :search_paths

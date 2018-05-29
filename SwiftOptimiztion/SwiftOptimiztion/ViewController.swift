@@ -8,17 +8,6 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
-
-extension ObservableType {
-	public func bool(_ value: Bool, errorValue: Bool? = nil) -> Observable<Bool> {
-		var observable = map { _ in value }
-		if let errorValue = errorValue {
-			observable = observable.catchErrorJustReturn(errorValue)
-		}
-		return observable
-	}
-}
 
 class ViewController: UIViewController {
 
