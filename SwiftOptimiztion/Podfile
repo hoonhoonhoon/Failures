@@ -1,38 +1,17 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-#
-
-def rx
-    pod 'RxSwift'
-    pod 'RxCocoa'
-end
-
-def testing
-end
-
-def analytics
-end
-
-def model
-end
-
-def base
-  analytics
-  model
-  rx
-end
+platform :ios, '11.3'
 
 target 'SwiftOptimiztion' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for SwiftOptimiztion
-  base
+  pod 'RxSwift'
+	pod 'RxCocoa'
 
   target 'SwiftOptimiztionTests' do
     inherit! :search_paths
     # Pods for testing
-    testing
   end
 
 end
