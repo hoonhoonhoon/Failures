@@ -8,6 +8,11 @@
 
 import Foundation
 
+public enum Next<Element> {
+	case next(Element)
+	case completed
+}
+
 /// OnNext를 RxSwiftCrashTest안에서 구현하는 경우 문제가 발생하지 않는다.
 public protocol OnNext {
 	associatedtype Element

@@ -9,11 +9,6 @@
 import XCTest
 @testable import SwiftOptimiztion
 
-public enum Next<Element> {
-	case next(Element)
-	case completed
-}
-
 public final class ReceiveEvent<Element>: OnNext {
 
 	public func on(_ event: Next<Element>) {
