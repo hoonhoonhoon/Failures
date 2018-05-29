@@ -17,33 +17,20 @@ public final class ReceiveEvent<Element>: OnNext {
 
 }
 
-final class AnonymousEventSend<Element> {
-	typealias EventHandler = (Next<Element>) -> Void
-	let eventHandler: (Next<Element>) -> Void
-	init(_ handler: @escaping EventHandler) {
-		self.eventHandler = handler
-	}
-	func onCore(_ next: Next<Element>) {
-		self.eventHandler(next)
-	}
-}
-
 final class FireEvent<Element> {
-	var observer: AnonymousEventSend<Element>?
+	var onNext: ((Element) -> Void)?
 	func subscribe(onNext: ((Element) -> Void)? = nil, onCompleted: (() -> Void)? = nil) {
-		self.observer = AnonymousEventSend { event in
-			switch event {
-			case .next(let element):
-				onNext?(element)
-			case .completed:
-				onCompleted?()
-			}
-		}
+		self.onNext = onNext
 	}
 
 	func fire(_ next: Next<Element>) {
 		DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-			self.observer?.onCore(next)
+			switch next {
+			case .next(let element):
+				self.onNext?(element)
+			case .completed:
+				break
+			}
 		}
 	}
 }
