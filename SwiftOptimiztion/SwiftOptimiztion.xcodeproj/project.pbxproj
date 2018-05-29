@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFAF3CA520BD49F60025E1DE /* OnNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF3CA420BD49F60025E1DE /* OnNext.swift */; };
 		FFC1CC6D20BBC683004E92AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */; };
 		FFC1CC6F20BBC683004E92AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6E20BBC683004E92AE /* ViewController.swift */; };
 		FFC1CC7220BBC683004E92AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7020BBC683004E92AE /* Main.storyboard */; };
 		FFC1CC7720BBC684004E92AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7620BBC684004E92AE /* Assets.xcassets */; };
 		FFC1CC7A20BBC684004E92AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */; };
 		FFC1CC8520BBC684004E92AE /* CrashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC8420BBC684004E92AE /* CrashTest.swift */; };
-		FFC4545920BD17FF00AD92AC /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC4545820BD17FF00AD92AC /* Next.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FFAF3CA420BD49F60025E1DE /* OnNext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnNext.swift; sourceTree = "<group>"; };
 		FFC1CC6920BBC683004E92AE /* SwiftOptimiztion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOptimiztion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC1CC6E20BBC683004E92AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		FFC1CC8020BBC684004E92AE /* SwiftOptimiztionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOptimiztionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1CC8420BBC684004E92AE /* CrashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashTest.swift; sourceTree = "<group>"; };
 		FFC1CC8620BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFC4545820BD17FF00AD92AC /* Next.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Next.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC1CC8420BBC684004E92AE /* CrashTest.swift */,
-				FFC4545820BD17FF00AD92AC /* Next.swift */,
+				FFAF3CA420BD49F60025E1DE /* OnNext.swift */,
 				FFC1CC8620BBC684004E92AE /* Info.plist */,
 			);
 			path = SwiftOptimiztionTests;
@@ -210,7 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC1CC8520BBC684004E92AE /* CrashTest.swift in Sources */,
-				FFC4545920BD17FF00AD92AC /* Next.swift in Sources */,
+				FFAF3CA520BD49F60025E1DE /* OnNext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

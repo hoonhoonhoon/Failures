@@ -10,33 +10,14 @@ import XCTest
 @testable import SwiftOptimiztion
 
 public final class ReceiveEvent<Element>: OnNext {
-
-	public func on(_ event: Next<Element>) {
+	public func on(_ event: Element) {
 		print(event)
-	}
-
-}
-
-final class FireEvent<Element> {
-	var onNext: ((Element) -> Void)?
-	func subscribe(onNext: ((Element) -> Void)? = nil, onCompleted: (() -> Void)? = nil) {
-		self.onNext = onNext
-	}
-
-	func fire(_ next: Next<Element>) {
-		DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-			switch next {
-			case .next(let element):
-				self.onNext?(element)
-//			case .completed:
-//				break
-			}
-		}
 	}
 }
 
 class CrashTest: XCTestCase {
-	var testObserver = ReceiveEvent<Bool>()
+	var receiver = ReceiveEvent<Bool>()
+	var onNext: ((Bool) -> Void)?
 
 	override func setUp() {
 		super.setUp()
@@ -49,12 +30,13 @@ class CrashTest: XCTestCase {
 
 	/// 
 	func testCrash() {
-		let fire = FireEvent<Bool>()
-		fire.subscribe(onNext: self.testObserver.onNext)
-		fire.fire(.next(false))
-
+		self.onNext = self.receiver.onNext
 		let waiter = XCTWaiter()
 		let expect = expectation(description: #function)
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+			self.onNext?(false)
+			expect.fulfill()
+		}
 		waiter.wait(for: [expect], timeout: 0.3)
 	}
 
