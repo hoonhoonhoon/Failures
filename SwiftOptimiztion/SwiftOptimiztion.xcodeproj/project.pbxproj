@@ -38,7 +38,6 @@
 		FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC1CC6E20BBC683004E92AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFC1CC7120BBC683004E92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FFC1CC7420BBC683004E92AE /* SwiftOptimiztion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftOptimiztion.xcdatamodel; sourceTree = "<group>"; };
 		FFC1CC7620BBC684004E92AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC1CC7920BBC684004E92AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC1CC7B20BBC684004E92AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 				FFC1CC7620BBC684004E92AE /* Assets.xcassets */,
 				FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */,
 				FFC1CC7B20BBC684004E92AE /* Info.plist */,
-				FFC1CC7320BBC683004E92AE /* SwiftOptimiztion.xcdatamodeld */,
 			);
 			path = SwiftOptimiztion;
 			sourceTree = "<group>";
@@ -618,19 +616,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FFC1CC7320BBC683004E92AE /* SwiftOptimiztion.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FFC1CC7420BBC683004E92AE /* SwiftOptimiztion.xcdatamodel */,
-			);
-			currentVersion = FFC1CC7420BBC683004E92AE /* SwiftOptimiztion.xcdatamodel */;
-			path = SwiftOptimiztion.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FFC1CC6120BBC683004E92AE /* Project object */;
 }

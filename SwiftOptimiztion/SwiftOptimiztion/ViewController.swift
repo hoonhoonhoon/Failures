@@ -26,24 +26,13 @@ class ViewController: UIViewController {
 	var showIndicator: Driver<Bool>!
 	let bag = DisposeBag()
 
-	var info: Observable<String>!
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		info = Observable.create({ (observer) -> Disposable in
-			DispatchQueue.global(qos: DispatchQoS.QoSClass.background).asyncAfter(deadline: .now() + 0.15, execute: {
-				observer.onNext("Test")
-				observer.onCompleted()
-			})
-			return Disposables.create()
-		})
 
 		self.showIndicator = self._showIndicator.share(replay: 1).distinctUntilChanged().asDriver(onErrorJustReturn: false).debug("Show Indicator")
 		self._showIndicator.onNext(true)
 		self._showIndicator.subscribe().disposed(by: bag)
 		self.subscribes()
-
 		
 	}
 
