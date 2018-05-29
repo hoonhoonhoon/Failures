@@ -36,7 +36,11 @@ class RxSwiftCrashTest: XCTestCase {
 		super.tearDown()
 	}
 
-	// onNext가 가능한 Rx trait를 다른 옵저버블에 바인딩 하지 않고 직접 해당 trait의 onNext함수를 인수로 전달할 경우 해당 함수를 소유하는 trait이 메모리에서 해지되거나 메모리 좌표에 문제가 발생하는 듯
+	/// ObserverType의 onNext함수는 extension을 통해 구현하고 있습니다.
+	/// ObserverType을 구현하는 타입은 on함수만 구현하면 onNext, onCompleted, onError함수의 Event가 on으로 편하게 넘어가도록 구현되어있습니다.
+	/// 문제는 swift code generation optmization level을 optimization speed로 하는 경우
+	/// 특정 observertype의 onNext함수를 인자로서만 사용할 때 발생하는데,
+	/// 현재까지는 onNext 함수(클로져)를 소유하는 객체의 소유권이 해지됨으로서 발생하는 이슈인거 같습니다.
 	func testRxSwiftCrash() {
 		Observable.just(true).subscribe(onNext: self.testObserver.onNext).dispose()
 //		Observable.just(true).subscribe(onNext: self.publishSubject.onNext).dispose()
