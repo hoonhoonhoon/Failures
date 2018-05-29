@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		505DB96835DB03305A4B823D /* Pods_SwiftOptimiztionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D04CF2874768A1BEC939CD /* Pods_SwiftOptimiztionTests.framework */; };
 		6C866D204D225F1E5E0CE745 /* Pods_SwiftOptimiztion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87BA8156B90351D602F6F34 /* Pods_SwiftOptimiztion.framework */; };
+		FF140BBD20BCD8CE00A99FC2 /* RxSwiftCrash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */; };
 		FFC1CC6D20BBC683004E92AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */; };
 		FFC1CC6F20BBC683004E92AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1CC6E20BBC683004E92AE /* ViewController.swift */; };
 		FFC1CC7220BBC683004E92AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC1CC7020BBC683004E92AE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		E9C8C4F399F8AA34DF4419AF /* Pods-SwiftOptimiztionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztionTests/Pods-SwiftOptimiztionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F87BA8156B90351D602F6F34 /* Pods_SwiftOptimiztion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftOptimiztion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93185C9E7921E75795ABEEA /* Pods-SwiftOptimiztion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOptimiztion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOptimiztion/Pods-SwiftOptimiztion.debug.xcconfig"; sourceTree = "<group>"; };
+		FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCrash.swift; sourceTree = "<group>"; };
 		FFC1CC6920BBC683004E92AE /* SwiftOptimiztion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOptimiztion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC1CC6E20BBC683004E92AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				FFC1CC6C20BBC683004E92AE /* AppDelegate.swift */,
 				FFC1CC6E20BBC683004E92AE /* ViewController.swift */,
+				FF140BBC20BCD8CE00A99FC2 /* RxSwiftCrash.swift */,
 				FFC1CC7020BBC683004E92AE /* Main.storyboard */,
 				FFC1CC7620BBC684004E92AE /* Assets.xcassets */,
 				FFC1CC7820BBC684004E92AE /* LaunchScreen.storyboard */,
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF140BBD20BCD8CE00A99FC2 /* RxSwiftCrash.swift in Sources */,
 				FFC1CC6F20BBC683004E92AE /* ViewController.swift in Sources */,
 				FFC1CC6D20BBC683004E92AE /* AppDelegate.swift in Sources */,
 			);
@@ -511,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,7 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,7 +550,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HY47J4787Q;
-				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = SwiftOptimiztionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +558,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOptimiztion.app/SwiftOptimiztion";
@@ -578,7 +580,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rollmind.SwiftOptimiztionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOptimiztion.app/SwiftOptimiztion";

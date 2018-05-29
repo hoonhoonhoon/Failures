@@ -22,25 +22,11 @@ extension ObservableType {
 
 class ViewController: UIViewController {
 
-	private let _showIndicator = BehaviorSubject<Bool>(value: true)
-	var showIndicator: Driver<Bool>!
-	let bag = DisposeBag()
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.showIndicator = self._showIndicator.share(replay: 1).distinctUntilChanged().asDriver(onErrorJustReturn: false).debug("Show Indicator")
-		self._showIndicator.onNext(true)
-		self._showIndicator.subscribe().disposed(by: bag)
-		self.subscribes()
-		
 	}
 
-	func subscribes() {
-
-		Observable.just(true).asDriver(onErrorJustReturn: false).drive(onNext: self._showIndicator.onNext).disposed(by: bag)
-
-	}
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
