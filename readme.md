@@ -1,8 +1,5 @@
 ## SwiftOptimization
 **컴파일 옵티마이제이션 관련 장애 추적 프로젝트**
-*장애 내용
-앱스토어 배포 버전에서 크래시 발생
-RxSwift, RxCocoa를 사용한 코드가 관련됨
 
 ### Environment
 - Libraries
